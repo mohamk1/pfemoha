@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timing</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            background-image: url('pp'); /* Replace 'pp' with your background image URL */
+            background-size: cover;
+            background-position: center;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 40px;
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            color: #000000;
+            opacity: 0; /* Initially hidden */
+            animation: slideInRight 1s ease forwards; /* Slide-in animation from left to right */
+        }
+
+        @keyframes slideInRight {
+            from {
+                opacity: 0;
+                transform: translateX(-100%);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        h1 {
+            font-size: 48px;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            color: #6c5ce7; /* Same color as the first page */
+        }
+
+        .schedule {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+            background-color: #f2f2f2; /* Same background color as the first page */
+        }
+
+        .schedule th,
+        .schedule td {
+            padding: 15px;
+            border: none;
+            border-bottom: 1px solid #dddddd; /* Same border color as the first page */
+        }
+
+        .schedule th {
+            background-color: #f2f2f2; /* Same background color as the first page */
+            color: #6c5ce7; /* Same color as the first page */
+        }
+
+        .schedule tr:hover {
+            background-color: #ffffff; /* Same background color as the first page */
+        }
+
+        .buttons {
+            margin-top: 40px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #6c5ce7; /* Same color as the first page */
+            color: #ffffff; /* Same color as the first page */
+            text-decoration: none;
+            border: none;
+            border-radius: 30px;
+            transition: all 0.3s ease;
+            font-size: 18px;
+            text-transform: uppercase;
+        }
+
+        .button:hover {
+            background-color: #ffffff; /* Same color as the first page */
+            color: #6c5ce7; /* Same color as the first page */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Class Schedule - Tuesday</h1>
+        <table class="schedule">
+            <tr>
+                <th>Subject</th>
+                <th>Time</th>
+            </tr>
+            <tr>
+                <td>Mathematics</td>
+                <td>08:00 AM - 09:30 AM</td>
+            </tr>
+            <tr>
+                <td>Science</td>
+                <td>10:00 AM - 11:30 AM</td>
+            </tr>
+            <tr>
+                <td>History</td>
+                <td>12:00 PM - 01:30 PM</td>
+            </tr>
+            <tr>
+                <td>English</td>
+                <td>02:00 PM - 03:30 PM</td>
+            </tr>
+        </table>
+        <div class="buttons">
+            <a href="main etdn.html" class="button">Back to Home</a>
+        </div>
+    </div>
+</body>
+</html>

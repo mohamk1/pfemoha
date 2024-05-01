@@ -1,0 +1,85 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    background-image: url(pp);
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    color: #000000;
+    opacity: 0;
+    animation: fadeInUp 1s ease forwards;
+}
+
+h1 {
+    font-size: 48px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    color: #333333; /* Dark gray color */
+}
+
+.schedule {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+
+.schedule th,
+.schedule td {
+    padding: 15px;
+    border: none;
+    border-bottom: 1px solid #000000;
+}
+
+.schedule th {
+    background-color: rgba(0, 0, 0, 0.1); /* Semi-transparent black background for table headers */
+    color: #ffffff; /* White text color */
+}
+
+.schedule td {
+    background-color: rgba(0, 0, 0, 0.2); /* Semi-transparent black background for table cells */
+    color: #ffffff; /* White text color */
+}
+
+.schedule tr:hover {
+    background-color: rgba(0, 0, 0, 0.3); /* Darker semi-transparent black background on hover */
+}
+
+.buttons {
+    margin-top: 40px;
+}
+
+.button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #ffffff; /* White background */
+    color: #050404;
+    text-decoration: none;
+    border: 2px solid #060505;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.button:hover {
+    background-color: #d79f9f; /* Light red background on hover */
+    color: #211f34; /* Dark text color on hover */
+}
